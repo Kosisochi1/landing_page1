@@ -12,19 +12,17 @@ body {
 
 article {
 	max-width: 1000px;
-	max-height: 1126px;
+	max-height: auto;
 	background-color: #f4f8fd;
 	margin: 0 auto;
 	border: 48px solid #ff7982;
 }
 .container {
-	max-width: 1000px;
 	margin: 0 auto;
 	background-image: url('../NewFolder/d6fb2c1af906acc95accb60c43105b37.png');
 	background-size:cover;
 }
 .up {
-	max-width: 1000px;
 	height: 400px;
 	display: flex;
 	justify-content: center;
@@ -42,13 +40,15 @@ header {
 .nav-item1 {
 	list-style-type: none;
 	display: flex;
-	width: 495px;
 	height: 40px;
 	gap: 5px;
 	padding-inline-start: 25px;
 }
 .nav-item1 li {
 	padding-inline-end: 16px;
+}
+.nav-item3{
+    display: none;
 }
 .nav-item2 > i,
 button {
@@ -79,8 +79,8 @@ button {
 
 .select {
 	border: none;
-}
 
+}
 .img-txt {
 	max-width: 500px;
 	height: 180px;
@@ -151,5 +151,31 @@ button {
 }
 .down2{
     background-image: url("../NewFolder/1a38c53cbf8dd5d502d15eba186e3409.png");
+
+}
+/*For smaller screen*/
+@media screen and (max-width: 900px){
+    .nav-item1{
+        display: none;
+    }
+    .nav-item3{
+        display: flex;
+        padding-inline-start: 16px;
+    }
+    .down{
+        display: block;
+
+    }
+    .sec-two{
+        margin-top: 20px;
+    }
+    .nav-item2{
+        margin-inline-end: 0;
+        margin-inline-start: 0;
+    }
+    .nav-item2 >.sign-up{
+        width: 70px;
+        height: 25px;
+    }
 
 }
